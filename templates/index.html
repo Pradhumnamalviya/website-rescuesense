@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Drone Specifications</h1>
+    </header>
+    
+    <div class="container">
+        
+
+        <section class="block">
+            <h2>LiDAR Sensor</h2>
+            <img src="images/lidar.jpg" alt="LiDAR Sensor">
+            <p>Description and specifications of the LiDAR sensor...</p>
+        </section>
+
+        <section class="block camera">
+            <h2>Camera</h2>
+            <img src="{{ url_for('video_feed') }}" alt="Live Video Feed">
+            <p>Description and specifications of the drone's camera...</p>
+        </section>
+
+        <section class="block">
+            <h2>Thermal Sensor</h2>
+            <img src="images/thermal.jpg" alt="Thermal Sensor">
+            <p>Description and specifications of the thermal sensor...</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Tech Envisions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
